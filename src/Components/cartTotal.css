@@ -1,0 +1,40 @@
+/* Cart Totals Wrapper */
+.cart-totals {
+    background-color: #f8f9fa; /* Light gray background */
+    border: 1px solid #e0e0e0; /* Light border */
+    border-radius: 8px; /* Rounded corners */
+    width: 100%; /* Full width */
+    max-width: 400px; /* Fixed width for cleaner appearance */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  }
+  
+  /* Title Styling */
+  .cart-totals h3 {
+    color: #333; /* Darker text for title */
+    font-size: 1.5rem;
+  }
+  
+  /* Details for Subtotal, Delivery Fee, and Total */
+  .totals-details p {
+    font-size: 1rem;
+    margin: 0.5rem 0;
+    color: #555;
+  }
+  
+  /* Total Amount */
+  .total-amount {
+    font-size: 1.2rem;
+    color: #000;
+  }
+  
+  .total-amount span {
+    color: blue; /* Red for total value */
+  }
+  
+  /* Responsive Behavior */
+  @media (max-width: 992px) {
+    .cart-totals {
+      text-align: center; /* Center align text */
+    }
+  }
+  

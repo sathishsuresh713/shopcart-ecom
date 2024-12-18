@@ -1,0 +1,28 @@
+@media(max-width: 450px) {
+    .card{
+        width: 60%;
+       margin: auto;
+    }
+}
+.custom-card {
+    overflow: hidden; /* Ensure any overflowing content is hidden */
+  }
+  
+  .image-container {
+    position: relative;
+    overflow: hidden; /* Keep the zoom effect contained */
+    width: 100%;
+    height: auto; /* Maintain responsiveness */
+    border: none;
+  }
+  
+  .zoom-image {
+    transition: transform 0.3s ease-in-out; /* Smooth zoom-in effect */
+    width: 100%;
+    height: auto;
+  }
+  
+  .image-container:hover .zoom-image {
+    transform: scale(1.1); /* Zoom in the image on hover */
+  }
+  

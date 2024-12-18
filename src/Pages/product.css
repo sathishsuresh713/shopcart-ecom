@@ -1,0 +1,8 @@
+.img-des{
+    width: 100%;
+}
+@media (max-width:450px){
+    .img-des{
+        width: 30%;
+    }
+}

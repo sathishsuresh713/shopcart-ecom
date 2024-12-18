@@ -1,0 +1,26 @@
+.line1{
+    content: "";
+    height: 2px;
+    width: 5%;
+    background-color: black;
+}
+.hero-des{
+    width: 630px;
+    height: 500px;
+    object-fit: cover;
+    object-position: center;
+}
+.responsive-image {
+    width: 100%; /* Makes the image fit the width of the container */
+    height: 100%; /* Ensures the image covers the height */
+    object-fit: cover; /* Ensures the image maintains aspect ratio while filling the container */
+    object-position: center; /* Centers the image */
+  }
+  
+  .image-container {
+    border: 2px solid black; /* Example border */
+    width: 100%; /* Adjust width based on container size */
+    height: 500px; /* Fixed height to maintain proportions */
+    overflow: hidden; /* Ensures no part of the image overflows the border */
+  }
+  

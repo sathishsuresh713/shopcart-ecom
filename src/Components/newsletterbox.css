@@ -1,0 +1,12 @@
+@media(min-width:992px){
+    .input-des{
+        width: 102%;
+    }
+} 
+.input-des{
+    border: 2px solid rgb(0, 0, 255);
+}
+.input-des:focus{
+    box-shadow: none;
+    border: 2px solid orange;
+}

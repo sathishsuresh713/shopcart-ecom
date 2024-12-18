@@ -1,0 +1,113 @@
+.logo{
+  width: 150px;
+}
+.profile-icon-container {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.profile-dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    min-width: 150px;
+}
+
+.profile-dropdown a {
+    display: block;
+    padding: 10px 15px;
+    color: gray;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.profile-dropdown a:hover {
+    background-color: #f1f1f1;
+    color: black;
+}
+
+.profile-icon-container:hover .profile-dropdown {
+    display: block;
+}
+.nav-link{
+    font-size: 1.1rem;
+    color: gray;
+    font-weight: 500;
+}
+.icon-width{
+    width: 25px;
+    cursor: pointer;
+}
+.nav-link {
+    position: relative;
+    text-decoration: none;
+  }
+  
+  @media (min-width: 992px) {
+    .nav-link:after {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 0;
+        height: 2px;
+        background:linear-gradient(to right, #2200ff, orange) ; /* Line color */
+        transition: width 0.3s ease; /* Smooth animation */
+      }
+      
+  }
+  .nav-link:hover:after  {
+    width: 100%; /* Full-width line on hover */
+  }
+.navbar-toggler , .btn-close {
+  border-width: 3px;
+  border-style: solid;
+  border-image: linear-gradient(to bottom right, #2200ff 50%, orange 50%);
+  border-image-slice: 1;
+}
+
+.navbar-toggler:focus , .btn-close:focus{
+    box-shadow: none;
+}
+@media (max-width: 992px) {
+    .nav-link:hover{
+        border-width: 3px;
+        border-style: solid;
+        border-image: linear-gradient(to bottom right, #2200ff 50%, orange 50%);
+        border-image-slice: 1;
+        border-radius: 10px;
+        margin: 5px;
+        padding: 5px;
+    }
+  }
+  .cart-icon {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+   
+  }
+  
+  .count {
+    position: absolute;
+    top: -20px;
+    right: 8px;
+    width: 20px;
+    height: 20px;
+    background-color: rgb(0, 0, 255);
+    border-radius: 50%;
+    color: #fff;
+    font-size: 12px;
+    line-height: 20px;
+    text-align: center;
+  }
+.offcanvas{
+    background-color: lavenderblush;
+}

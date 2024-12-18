@@ -1,0 +1,76 @@
+/* Delivery Information Form Styling */
+.delivery-form {
+    background-color: #f9f9f9; /* Light background for contrast */
+    border: 1px solid #e0e0e0;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Form Labels */
+  .delivery-form .form-label {
+    font-weight: 600;
+    color: #333;
+  }
+  
+  /* Form Controls */
+  .delivery-form .form-control,
+  .delivery-form .form-select {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  /* Input Focus */
+  .delivery-form .form-control:focus,
+  .delivery-form .form-select:focus {
+    border-color: #333;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Submit Button */
+  .delivery-form .btn-dark {
+    background-color: #333;
+    border: none;
+    transition: all 0.3s ease;
+  }
+  
+  .delivery-form .btn-dark:hover {
+    background-color: #555;
+  }
+/* Payment Methods Container */
+.payment-methods {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: end; /* Center items horizontally */
+    gap: 20px; /* Optional: add space between items */
+    width: 100%;
+    cursor: pointer;
+  }
+  
+  /* Individual Payment Method Styling */
+  .payment-method {
+    text-align: center;
+    border: 1px solid #ccc; /* Light gray border */
+    border-radius: 8px;
+    padding: 20px;
+    width: 80%; /* Set a specific width */
+    max-width: 300px; /* Optional: set a max width for the payment boxes */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: orange;
+  }
+  
+  /* Adjust spacing for the text */
+  .payment-method p {
+    font-weight: bold;
+    margin: 0;
+  }
+  .payment-method:hover{
+    background-color: rgb(255, 183, 0);
+  }
+
+  @media(max-width:450px){
+    .payment-methods{
+        align-items: center;
+    }
+}
+  
