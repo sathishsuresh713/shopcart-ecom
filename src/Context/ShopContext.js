@@ -72,6 +72,20 @@ const updateQuantity = async(ItemId, size, quantity) => {
     return totalAmount;
 }
 
+const clearCartCount = () => {
+    // Create a new object with the same structure but all quantities set to 0
+    let cartData = structuredClone(cartItems);
+
+    for (const itemId in cartData) {
+        for (const size in cartData[itemId]) {
+            cartData[itemId][size] = 0;
+        }
+    }
+
+    setCartItems(cartData); // Update the state with the modified data
+};
+
+
     const value = {
       products,
       currency,
@@ -82,7 +96,7 @@ const updateQuantity = async(ItemId, size, quantity) => {
       setShowSearch,
       cartItems,
       addToCart,
-      getCartCount,updateQuantity,getCartAmount
+      getCartCount,updateQuantity,getCartAmount,clearCartCount
     };
 
     return (

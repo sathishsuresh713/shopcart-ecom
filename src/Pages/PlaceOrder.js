@@ -1,18 +1,22 @@
-import React, { useState } from 'react'
+import React, { useContext, useState } from 'react'
 import './placeorder.css'
 import CartTotal from '../Components/CartTotal'
 import { useNavigate } from 'react-router-dom';
 import { toast } from 'react-toastify';
+import { ShopContext } from '../Context/ShopContext';
 
 function PlaceOrder() {
 
 const [method, setMethod] = useState('cod');
+const {clearCartCount} = useContext(ShopContext);
 const navigate = useNavigate();
 
 const haldleclick = () => {
-  navigate("/");
-  toast.success('Order Placed Successfully',{autoClose: 2000, position: "top-center"});
-}
+  clearCartCount(); // Reset the cart count
+  navigate("/"); // Navigate to the home page
+  toast.success("Order Placed Successfully", { autoClose: 2000, position: "top-center" });
+};
+
 
   return (
     <div className="container my-5">
